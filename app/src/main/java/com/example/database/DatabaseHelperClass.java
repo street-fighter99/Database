@@ -34,9 +34,8 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     public void Insert(String username, String pass){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues=new ContentValues();
-        ContentValues.put(COLO2,username);
-        ContentValues.put(COLO3,pass);
-
+        contentValues.put(COLO2,username);
+        contentValues.put(COLO3,pass);
 
     }
 }
